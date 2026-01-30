@@ -1,11 +1,15 @@
 {
   "pages": [
-    "index",
-    "---{img:/icons/Icon_MA_Script.png}Modular Avatar1---",
+    "[House][소개](/docs)",
+    "[MessageCircleQuestionMark][자주 묻는 질문](/docs/faq)",
+    "---{img:/icons/Icon_MA_Script.png}Modular Avatar---",
     "...modular-avatar",
     "---{img:/icons/vrcfury_mini.png}VRCFury---",
     "...vrcfury",
     "---기타---",
+    "...etc-tools",
+    "!index",
+    "!faq",
     "..."
   ]
 }
