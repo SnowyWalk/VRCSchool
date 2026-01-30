@@ -5,17 +5,18 @@ description: 뭐하는 사이트인가여?
 
 import {Accordion, Accordions} from 'fumadocs-ui/components/accordion';
 import Link from 'fumadocs-core/link';
+import {ArrowBigRight} from "lucide-react";
+
 
 몰라
 
 ## 자주 묻는 질문
-
 <Accordions type="multiple">
     <Accordion title="부스 의상 어떻게 입히나여?">
         잘
     </Accordion>
     <Accordion title="옷, 헤어, 악세사리가 허공에 떠있어요 ㅠㅠ">
-        의상: [Setup Outfit]("/docs/modular-avatar/setup-outfit")
-        헤어, 악세사리: [MA Bone Proxy]("/docs/modular-avatar/ma-bone-proxy")
+        - 의상 <ArrowBigRight className="inline-block align-middle" /> [Setup Outfit]("/docs/modular-avatar/setup-outfit")
+        - 헤어, 악세사리 <ArrowBigRight className="inline-block align-middle" /> [MA Bone Proxy]("/docs/modular-avatar/ma-bone-proxy")
     </Accordion>
 </Accordions>
