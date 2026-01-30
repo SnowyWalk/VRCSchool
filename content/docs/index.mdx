@@ -1,13 +1,21 @@
 ---
-title: Hello World
-description: Your first document
+title: 소개
+description: 뭐하는 사이트인가여?
 ---
 
-Welcome to the docs! You can start writing documents in `/content/docs`.
+import {Accordion, Accordions} from 'fumadocs-ui/components/accordion';
+import Link from 'fumadocs-core/link';
 
-## What is Next?
+몰라
 
-<Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.dev" />
-</Cards>
+## 자주 묻는 질문
+
+<Accordions type="multiple">
+    <Accordion title="부스 의상 어떻게 입히나여?">
+        잘
+    </Accordion>
+    <Accordion title="옷, 헤어, 악세사리가 허공에 떠있어요 ㅠㅠ">
+        의상: [Setup Outfit]("/docs/modular-avatar/setup-outfit")
+        헤어, 악세사리: [MA Bone Proxy]("/docs/modular-avatar/ma-bone-proxy")
+    </Accordion>
+</Accordions>

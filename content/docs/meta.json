@@ -1,8 +1,11 @@
 {
   "pages": [
-    "---ASD---",
     "index",
-    "---a---",
-    "test"
+    "---{img:/icons/Icon_MA_Script.png}Modular Avatar1---",
+    "...modular-avatar",
+    "---{img:/icons/vrcfury_mini.png}VRCFury---",
+    "...vrcfury",
+    "---기타---",
+    "..."
   ]
 }

@@ -126,6 +126,26 @@ export function SidebarDrawer({
 export function SidebarSeparator({className, style, children, ...props}: ComponentProps<'p'>) {
     const depth = Base.useFolderDepth();
 
+    const rawText =
+        typeof children === 'string'
+            ? children
+            : Array.isArray(children)
+                ? children.filter((c) => typeof c === 'string').join('')
+                : null;
+
+    const parsed = (() => {
+        if (!rawText) return null;
+
+        let m = rawText.match(/^\s*\{\s*img:(.+?)\s*\}\s*(.*)\s*$/);
+        if (m) {
+            const iconSrc = m[1].trim();
+            const label = (m[2] ?? '').trim();
+            return iconSrc ? {iconSrc, label} : null;
+        }
+
+        return null;
+    })();
+
     return (
         <Base.SidebarSeparator
             className={cn('[&_svg]:size-4 [&_svg]:shrink-0', className)}
@@ -135,7 +155,19 @@ export function SidebarSeparator({className, style, children, ...props}: Compone
             }}
             {...props}
         >
-            {children}
+            {parsed ? (
+                <span className="flex items-center gap-2">
+          <img
+              src={parsed.iconSrc}
+              alt=""
+              aria-hidden="true"
+              className="h-6 w-6 shrink-0"
+          />
+          <span className="">{parsed.label}</span>
+        </span>
+            ) : (
+                children
+            )}
         </Base.SidebarSeparator>
     );
 }
