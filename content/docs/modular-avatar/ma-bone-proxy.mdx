@@ -1,7 +1,36 @@
 ---
 title: MA Bone Proxy
-description: 나중에 적을래
+description: Hips로 시작하지 않는 Armature를 가진 헤어/악세사리 등을 아바타 본에 매핑
 ---
+import {Accordions, Accordion} from "fumadocs-ui/components/accordion";
 
-## 사용 목적
-나중에 적을래
+- Setup Outfit으로 착용되지 않는 일부 의상이나 헤어, 악세사리 등을 착용하고자 할 때 사용하는 기능입니다.
+- 주로 공용으로 쓰이는 헤어, 귀걸이, 반지 등이 이 컴포넌트를 필요로 합니다.
+***
+
+## 사용 방법
+<Accordions>
+    <Accordion title={"적용 예시 영상"}>
+        <video src="/videos/ma_bone_proxy_yes.mov" controls/>
+    </Accordion>
+</Accordions>
+***
+## 이 컴포넌트를 필요로 하는 사례
+<Accordions type="multiple">
+    <Accordion title={"부스에서 산 헤어/악세사리를 입혔는데, 허공에 떠다녀요 ㅠㅠ"}>
+        <Accordions>
+            <Accordion title={"예시 영상 보기"}>
+                <video src="/videos/setup_outfit_no.mov" controls/>
+                - Setup Outfit 기능을 사용하지 않으면 반드시 일어나는 당연한 현상입니다.
+                - 영상 하단의 Project 탭에 보이는 것처럼 `MA` 라고 적힌 프리팹이 같이 제공되는 경우도 있는데, 이 프리팹은 Setup Outfit을 비롯해 기믹이 적용된 프리팹이므로 가급적 `MA`가 표기된 프리팹을 사용하는 것을 권장합니다.
+            </Accordion>
+        </Accordions>
+
+    </Accordion>
+    <Accordion title={"![Setup Outfit](/docs/modular-avatar/setup-outfit)을 시도했는데, 에러창이 떠요 ㅠㅠ"}>
+    </Accordion>
+
+</Accordions>
+***
+## FAQ
+***
