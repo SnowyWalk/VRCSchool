@@ -4,6 +4,10 @@
     "index",
     "install",
     "setup-outfit",
+    "ma-bone-proxy",
+    "ma-object-toggle",
+    "ma-shape-changer",
+    "ma-blendshape-sync",
     "..."
   ]
 }
